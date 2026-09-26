@@ -1,13 +1,8 @@
 export default function StudentCard({ student }) {
-  const { name, rollNumber, department, semester, cgpa, photo } = student;
+  const { name, rollNumber, department, semester, cgpa } = student;
 
   return (
     <div className="student-card">
-      <div className="card-header">
-        <div className="student-photo-wrapper">
-          <img src={photo} alt={`${name}'s photo`} className="student-photo" />
-        </div>
-      </div>
       <div className="card-body">
         <h3 className="student-name">{name}</h3>
         <p className="student-roll">Roll No: {rollNumber}</p>

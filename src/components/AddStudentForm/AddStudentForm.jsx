@@ -7,8 +7,7 @@ export default function AddStudentForm({ onAddStudent }) {
     rollNumber: '',
     department: '',
     semester: '',
-    cgpa: '',
-    photo: ''
+    cgpa: ''
   });
 
   const handleChange = (e) => {
@@ -26,8 +25,7 @@ export default function AddStudentForm({ onAddStudent }) {
 
     onAddStudent({
       ...formData,
-      cgpa: parseFloat(formData.cgpa) || 0,
-      photo: formData.photo || `https://i.pravatar.cc/150?u=${formData.rollNumber}`
+      cgpa: parseFloat(formData.cgpa) || 0
     });
 
     setFormData({
@@ -35,8 +33,7 @@ export default function AddStudentForm({ onAddStudent }) {
       rollNumber: '',
       department: '',
       semester: '',
-      cgpa: '',
-      photo: ''
+      cgpa: ''
     });
   };
 
@@ -58,9 +55,6 @@ export default function AddStudentForm({ onAddStudent }) {
         </div>
         <div className="form-group">
           <input type="number" step="0.1" max="10" name="cgpa" value={formData.cgpa} onChange={handleChange} placeholder="CGPA" required />
-        </div>
-        <div className="form-group">
-          <input type="url" name="photo" value={formData.photo} onChange={handleChange} placeholder="Photo URL (Optional)" />
         </div>
         <button type="submit" className="submit-btn">Add Student</button>
       </form>

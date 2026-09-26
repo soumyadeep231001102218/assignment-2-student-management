@@ -7,58 +7,52 @@ import AddStudentForm from './components/AddStudentForm/AddStudentForm';
 // Dummy data for students
 const initialStudents = [
   {
-    name: "Alex Johnson",
+    name: "Aritra Ghosh",
     rollNumber: "CS2023001",
     department: "Computer Science",
     semester: "4th",
-    cgpa: 8.9,
-    photo: "https://i.pravatar.cc/150?u=a042581f4e29026024d"
+    cgpa: 8.9
   },
   {
-    name: "Sarah Williams",
+    name: "Sourav Banerjee",
     rollNumber: "EE2023015",
     department: "Electrical Eng.",
     semester: "4th",
-    cgpa: 9.2,
-    photo: "https://i.pravatar.cc/150?u=a042581f4e29026704d"
+    cgpa: 9.2
   },
   {
-    name: "Michael Chen",
+    name: "Ananya Chatterjee",
     rollNumber: "ME2023042",
     department: "Mechanical Eng.",
     semester: "4th",
-    cgpa: 7.8,
-    photo: "https://i.pravatar.cc/150?u=a04258114e29026702d"
+    cgpa: 7.8
   },
   {
-    name: "Emily Davis",
+    name: "Riya Sen",
     rollNumber: "CS2023088",
     department: "Computer Science",
     semester: "4th",
-    cgpa: 9.5,
-    photo: "https://i.pravatar.cc/150?u=a048581f4e29026701d"
+    cgpa: 9.5
   },
   {
-    name: "David Smith",
+    name: "Debangshu Mukherjee",
     rollNumber: "CE2023102",
     department: "Civil Eng.",
     semester: "4th",
-    cgpa: 8.1,
-    photo: "https://i.pravatar.cc/150?u=a042581f4e29026703d"
+    cgpa: 8.1
   },
   {
-    name: "Jessica Taylor",
+    name: "Ishita Das",
     rollNumber: "IT2023055",
     department: "Information Tech.",
     semester: "4th",
-    cgpa: 8.6,
-    photo: "https://i.pravatar.cc/150?u=a04258a2462d826712d"
+    cgpa: 8.6
   }
 ];
 
 function App() {
   const [students, setStudents] = useState(() => {
-    const savedStudents = localStorage.getItem('studentsData');
+    const savedStudents = localStorage.getItem('studentsDataV2');
     if (savedStudents) {
       return JSON.parse(savedStudents);
     }
@@ -67,7 +61,7 @@ function App() {
   const [sortOrder, setSortOrder] = useState('desc'); // 'desc' or 'asc'
 
   useEffect(() => {
-    localStorage.setItem('studentsData', JSON.stringify(students));
+    localStorage.setItem('studentsDataV2', JSON.stringify(students));
   }, [students]);
 
   const handleAddStudent = (newStudent) => {
