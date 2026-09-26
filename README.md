@@ -20,7 +20,7 @@ To run this project locally, follow these steps:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/YOUR_USERNAME/assignment-2-student-management.git
+   git clone https://github.com/soumyadeep231001102218/assignment-2-student-management.git
    ```
 
 2. Navigate into the project directory:
@@ -41,7 +41,7 @@ To run this project locally, follow these steps:
 5. Open your browser and visit `http://localhost:5173` to view the site.
 
 ## Live Deployment
-Once deployed, the live site can be viewed at: [Deployment Link Here]
+Once deployed, the live site can be viewed at: [https://soumyadeep231001102218.github.io/assignment-2-student-management/](https://soumyadeep231001102218.github.io/assignment-2-student-management/)
 
 ## Author
 Soumyadeep Paul
