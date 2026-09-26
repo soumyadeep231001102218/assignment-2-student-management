@@ -38,7 +38,7 @@ To run this project locally, follow these steps:
    npm run dev
    ```
 
-5. Open your browser and visit `http://localhost:5173` to view the site.
+5. Open your browser and visit the live deployment to view the site: [https://soumyadeep231001102218.github.io/assignment-2-student-management/](https://soumyadeep231001102218.github.io/assignment-2-student-management/)
 
 ## Live Deployment
 Once deployed, the live site can be viewed at: [https://soumyadeep231001102218.github.io/assignment-2-student-management/](https://soumyadeep231001102218.github.io/assignment-2-student-management/)
